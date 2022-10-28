@@ -1,0 +1,34 @@
+{
+  "name": "sam.jurriaans/nested-set-laravel",
+  "description": "A full blown nested set solution for Laravel",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "SamJurriaans\\NestedSetLaravel\\": "src/",
+      "SamJurriaans\\NestedSetLaravel\\Tests\\": "tests"
+    }
+  },
+  "authors": [
+    {
+      "name": "Sam Jurriaans",
+      "email": "sam.jurriaans@startpagina.nl"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "illuminate/support": "10.x-dev"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "SamJurriaans\\NestedSetLaravel\\Providers\\NestedSetServiceProvider"
+      ]
+    }
+  },
+  "require-dev": {
+    "laravel/pint": "dev-main",
+    "phpstan/phpstan": "1.9.x-dev",
+    "orchestra/testbench": "8.0.x-dev"
+  }
+}
